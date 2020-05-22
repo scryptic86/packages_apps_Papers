@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019. Jahir Fiquitiva
+ * Copyright (c) 2020. Jahir Fiquitiva
  *
  * Licensed under the CreativeCommons Attribution-ShareAlike
  * 4.0 International License. You may not use this file except in compliance
@@ -13,22 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evolutionx.papers
+package com.oxyify.wallpaperpicker
 
-import android.app.Application
+/* TODO: Remove comment marks to enable
+import com.onesignal.NotificationExtenderService
+import com.onesignal.OSNotificationReceivedResult
+import jahirfiquitiva.libs.frames.helpers.utils.FramesKonfigs
 
-// TODO: Remove comment marks to enable
-// import com.onesignal.OneSignal
-
-class MyApplication : Application() {
-    override fun onCreate() {
-        super.onCreate()
-        // TODO: Remove comment marks to enable
-        /*
-        OneSignal.startInit(this)
-                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-                .unsubscribeWhenNotificationsAreDisabled(true)
-                .init()
-                */
-    }
+class NotificationService : NotificationExtenderService() {
+    override fun onNotificationProcessing(notification: OSNotificationReceivedResult?): Boolean =
+            !FramesKonfigs(this).notificationsEnabled
 }
+*/

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019. Jahir Fiquitiva
+ * Copyright (c) 2020. Jahir Fiquitiva
  *
  * Licensed under the CreativeCommons Attribution-ShareAlike
  * 4.0 International License. You may not use this file except in compliance
@@ -13,9 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.evolutionx.papers
+package com.oxyify.wallpaperpicker
 
-import jahirfiquitiva.libs.frames.data.services.FramesArtProvider
+import android.app.Application
 
-// TODO: Use a unique name instead of MyFramesMuzeiService
-class MuzeiService : FramesArtProvider()
+// TODO: Remove comment marks to enable
+// import com.onesignal.OneSignal
+
+class MyApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        // TODO: Remove comment marks to enable
+        /*
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init()
+                */
+    }
+}

@@ -47,7 +47,7 @@
 
         <activity
             android:name="com.oxyify.wallpaperpicker.MainActivity"
-            android:label="@string/app_name"
+            android:label="Oxy-ify Wallpapers"
             android:screenOrientation="userPortrait">
 
             <!-- TODO: Do NOT remove the intent-filter tags -->

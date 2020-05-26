@@ -42,7 +42,6 @@ import com.google.android.material.snackbar.Snackbar
 import jahirfiquitiva.libs.archhelpers.extensions.mdDialog
 import jahirfiquitiva.libs.frames.R
 import jahirfiquitiva.libs.frames.data.models.Wallpaper
-import jahirfiquitiva.libs.frames.helpers.extensions.showChanges
 import jahirfiquitiva.libs.frames.helpers.utils.ADW_ACTION
 import jahirfiquitiva.libs.frames.helpers.utils.APPLY_ACTION
 import jahirfiquitiva.libs.frames.helpers.utils.FramesKonfigs
@@ -154,7 +153,6 @@ abstract class BaseFramesActivity<T : FramesKonfigs> : BaseWallpaperActionsActiv
                 }
             } ?: {
                 prefs.functionalDashboard = true
-                if (update) showChanges()
             }()
         }
     }
@@ -196,8 +194,6 @@ abstract class BaseFramesActivity<T : FramesKonfigs> : BaseWallpaperActionsActiv
             showSnackbar(
                 getString(R.string.license_valid_snack, getAppName()),
                 Snackbar.LENGTH_SHORT)
-        } else {
-            showChanges()
         }
     }
     

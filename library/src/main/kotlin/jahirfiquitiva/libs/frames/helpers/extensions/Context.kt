@@ -87,10 +87,6 @@ fun Context.openWallpaper(uri: Uri) {
 fun Context.createHeartIcon(checked: Boolean): Drawable? =
     drawable(if (checked) "ic_heart" else "ic_heart_outline")
 
-fun Context.showChanges() {
-    showChangelog(R.xml.changelog, R.string.changelog, R.string.dismiss, secondaryTextColor)
-}
-
 val Context.dataCacheSize: String
     get() {
         var cache: Long = 0

@@ -84,9 +84,7 @@
             android:name=".ui.activities.CollectionActivity"
             android:windowSoftInputMode="stateHidden|adjustPan|adjustResize"
             android:exported="false" />
-        <activity
-            android:name=".ui.activities.CreditsActivity"
-            android:exported="false" />
+
 
         <activity android:name=".ui.activities.SettingsActivity">
             <intent-filter>

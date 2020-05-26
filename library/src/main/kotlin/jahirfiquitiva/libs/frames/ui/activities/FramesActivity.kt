@@ -256,9 +256,7 @@ abstract class FramesActivity : BaseFramesActivity<FramesKonfigs>(), FavsDbManag
         item?.let {
             when (it.itemId) {
                 R.id.refresh -> refreshContent()
-                R.id.about -> startActivityForResult(
-                        Intent(this, CreditsActivity::class.java), 22)
-            }
+                }
         }
         return super.onOptionsItemSelected(item)
     }

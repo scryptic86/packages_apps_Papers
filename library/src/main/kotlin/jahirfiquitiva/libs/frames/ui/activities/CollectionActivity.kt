@@ -156,8 +156,6 @@ class CollectionActivity : BaseFramesActivity<FramesKonfigs>(), FavsDbManager {
         menuInflater.inflate(R.menu.frames_menu, menu)
         
         menu?.let {
-            it.setItemVisibility(R.id.about, false)
-            
             val searchItem = it.findItem(R.id.search)
             searchView = searchItem?.actionView as? CustomSearchView
             searchView?.onExpand = { toolbar?.enableScroll(false) }
